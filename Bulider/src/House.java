@@ -11,7 +11,7 @@ public class House {
         this.doorsNumber = doorsNumber;
         this.windowsNumber = windowsNumber;
     }
-    public class HouseBuilder {
+    public static class HouseBuilder {
         private String adress;
         private Integer floorsNumber;
         private Integer doorsNumber;
@@ -37,7 +37,7 @@ public class House {
             return this;
         }
 
-        public House buildHouse() {
+        public House build() {
             return new House(adress, floorsNumber, doorsNumber, windowsNumber);
         }
     }
