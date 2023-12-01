@@ -18,7 +18,7 @@ public class Main {
         boolean isTrue = true;
         Boolean.valueOf(isTrue);
 
-        FamilyHouse.from(house);
+        FamilyHouse familyHouse = FamilyHouse.from(house);
 
     }
 }
