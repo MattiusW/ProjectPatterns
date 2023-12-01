@@ -2,10 +2,10 @@ package builder;
 
 public class House {
 
-    String adress;
-    Integer floorsNumber;
-    Integer doorsNumber;
-    Integer windowsNumber;
+    private String adress;
+    private Integer floorsNumber;
+    private Integer doorsNumber;
+    private Integer windowsNumber;
 
     House(String adress, Integer floorsNumber, Integer doorsNumber, Integer windowsNumber){
         this.adress = adress;
@@ -18,22 +18,6 @@ public class House {
         private Integer floorsNumber;
         private Integer doorsNumber;
         private Integer windowsNumber;
-
-        public String getAdress() {
-            return adress;
-        }
-
-        public Integer getFloorsNumber() {
-            return floorsNumber;
-        }
-
-        public Integer getDoorsNumber() {
-            return doorsNumber;
-        }
-
-        public Integer getWindowsNumber() {
-            return windowsNumber;
-        }
 
         public HouseBuilder setAdress(String adress) {
             this.adress = adress;
@@ -60,4 +44,19 @@ public class House {
         }
     }
 
+    public String getAdress() {
+        return adress;
+    }
+
+    public Integer getFloorsNumber() {
+        return floorsNumber;
+    }
+
+    public Integer getDoorsNumber() {
+        return doorsNumber;
+    }
+
+    public Integer getWindowsNumber() {
+        return windowsNumber;
+    }
 }
