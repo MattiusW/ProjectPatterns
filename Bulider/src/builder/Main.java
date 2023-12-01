@@ -1,3 +1,7 @@
+package builder;
+
+import builder.models.FamilyHouse;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,6 +17,8 @@ public class Main {
         //from, of, valueOf, instanceOf
         boolean isTrue = true;
         Boolean.valueOf(isTrue);
+
+        FamilyHouse.from(house);
 
     }
 }
